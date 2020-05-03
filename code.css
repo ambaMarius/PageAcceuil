@@ -1,0 +1,383 @@
+	.gauche
+  {
+  	display: inline-block;
+		float: left;
+		margin: 3 3 0 3; 
+		margin-top: 9px;
+	}
+	.droite
+	{
+		display: inline-block;
+		margin-top: 9px;
+		float: right;
+		margin: 3 3 0 3; 
+	}
+	.gauche1
+	{
+		margin-right: 9px;
+		color: white;
+
+	}
+	.gauche2
+	{
+		margin-right: 9px;
+		color: white;
+
+	}
+	.droite1
+	{
+		margin-right: 9px;
+		color: white;
+	}
+	.droite2
+	{
+		margin-right: 9px;
+		color: white;
+	}
+	.droite3
+	{
+		margin-right: 9px;
+		color: white;
+	}
+	#hautdepage a
+	{
+		text-decoration: none;
+	}
+	#hautdepage a:hover
+	{
+		color: yellow;
+	}
+
+
+
+
+
+
+
+*
+{
+	margin: 0px; padding: 0px;
+	box-sizing: border-box;
+}
+#logo
+{
+	/*position: relative;*/
+	display: inline-block;
+	margin-top: 39px;
+	margin-left: 35%;
+	width: 150px;
+	height: 150px;
+	border-radius: 40% 30% 50% 70%;
+	background-size: 150px; 
+	z-index: 1;
+}
+/*OUTLINE permet d'enlever le petit rectangle qui se trouve 
+sur la barre de recherche lorsqu'on adapte avec border-radius */
+#search
+{
+	display: inline-block;
+	position: relative;
+	left: 45%;
+	padding: 7px;
+	border: 3px solid maroon;
+	border-radius: 40px;
+	outline: none;
+	width: 30px;
+	padding-left: 20px;
+	font-size: 1.1em;
+	background:url('images/search.png') right no-repeat;
+	/*Compatibilité avec les navigateurs(o:opéra, moz:mozilla, ms:internet explorer)*/
+	transition: width 2s;
+	-webkit-transition: width 2s;
+	-moz-transition: width 2s;
+	-o-transition: width 2s;
+	-ms-transition: width 2s;
+}
+#search:focus
+{
+	width: 200px;
+}
+
+#details
+{
+	text-transform: uppercase;
+}
+.adroite 
+{
+	display: flex;
+	flex-direction: row-reverse;
+	
+	
+	text-align:left;
+	width: 8%;
+	padding-right:10px ;
+	padding-left: 1220px;
+	padding-top: -1352px;
+}
+.pannier
+{
+	flex:1 1 0;
+}
+.EN
+{
+	flex:1 1 0;
+}
+.FR
+{
+	flex:1 1 0 ;
+}
+nav li
+{
+	display: inline-block;
+	list-style-type: none;
+}
+
+div li
+{
+	display: inline-block;
+	margin-right: 30px;
+	margin-left: 30px;
+}
+#renseignement
+{
+	font-size: 1.3em;
+	background-color: black;
+	padding-bottom: 3px;
+	color: #eeeeee;
+}
+#renseignement a
+{
+	text-decoration: none;
+}
+body
+{
+	background-image: url('a.JPG');
+	position: fixed no-repeat;
+	width: 100%;
+	padding: 0px 0px 0px 0px;
+	height: 100%;
+}
+
+{
+	text-decoration: none;
+}
+
+.imagen
+{
+	width: 250px;
+	height: 250px;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 40% 30% 50% 70%;
+}
+footer
+{
+	padding-top: 25px;
+}
+footer p, footer ul
+{
+	font-size: 0.8em;
+}
+footer h1
+{
+	font-size: 1.1em;
+}
+#compte, #information, #newsletter
+{
+	display: inline-block;
+	width: 33.33%
+	vertical-align: top;
+	float: left;
+	font-size: 1.2em;
+}
+#reseau
+{
+	
+	display: inline-block;
+	width: 100%;
+	margin-top: 40px;
+	margin-bottom: 25px;
+}
+
+#compte a, #information a
+{
+	text-decoration: none;
+}
+#compte a:hover, #information a:hover
+{
+	color: #cc1818;
+}
+#compte
+{
+	width: 28%;
+}
+#information
+{
+	width: 35%;
+}
+#newsletter
+{
+	width: 31%;
+}
+#reseaux_sociaux
+{
+	width: 25%;
+}
+#payer
+{
+	width: 25%
+}
+#reseaux_sociaux img
+{
+	border: 1px solid #181818;
+	margin-right: 2px;
+}
+#compte ul, #information ul
+{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 0;
+	width: 48%;
+	padding-left: 2px;
+}
+.logo_reseaux_sociaux
+{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	margin-right: 10px;
+	border-radius: 55% 55% 100% 100%;
+}
+.logo_banque
+{
+	width: 50px;
+	height: 50px;
+	border-radius: 100% 100% 100% 100%;
+	margin-right: 10px;
+}
+
+.slide
+	{
+		float: left;
+	}
+	.slides
+	{
+		width: calc(650px*3);
+		animation: glisse 10s infinite;
+	}
+	.slider
+	{
+		width: 650px;
+		height: 300px;
+		overflow: hidden;
+		margin: 150px auto;
+		bottom: 10px;
+		margin-bottom: 50px;
+		margin-top: 250px;
+	}
+	@keyframes glisse
+	{
+		0%{ 
+			transform: translateX(0); 
+		}
+		10%{
+			 transform: translateX(0); 
+		}
+		33%{
+			 transform: translateX(-650px);
+		}
+		43%{
+			 transform: translateX(-650px); 
+		}
+		66%{ 
+			transform: translateX(-1300px);
+		}
+		76%{ 
+			transform: translateX(-1300px);
+		}
+		100%{
+			transform: translateX(0);
+		}
+	}
+	#renseignement a:hover
+	{
+		text-decoration: underline;
+		color: gold;
+	}
+	
+
+
+
+
+nav
+{
+	/*float: top;*/
+	/*background-color:#99cde4;*/
+	/*height: 100px;*/
+}
+#menu, #menu ul
+{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	font-size: 0px;
+}
+#menu li
+{
+	display: inline-block;
+	font-size: 15px;
+	position: relative;
+	border-right: 1px solid red;
+}
+
+/*dernière bordure des elements li*/
+#menu li:last-child 
+{
+	border: none;
+}
+#menu a
+{
+	display: block;
+	width: 269px;
+	height: 60px;
+	line-height: 20px;
+	text-align: center;
+	background-color: #012;
+	font-family: Tahoma;
+	text-decoration: none;
+	color: white;
+}
+#menu li ul
+{
+	left: -5000px;
+	position: absolute;
+}
+#menu li:hover > ul
+{
+	left: 0;
+}
+#menu li li:hover > ul
+{
+	left: 269px;
+	top: 2px;
+}
+#menu a:hover
+{
+	color: #cec;
+	background-color: #656;
+}
+
+
+section
+{
+	margin-bottom: 50px;
+	/*margin-top: 5px;*/
+}
+article
+{
+	margin-bottom: 50px;
+}
+.info
+{
+	margin-bottom: 50px;
+}
